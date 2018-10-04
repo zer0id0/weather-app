@@ -10,7 +10,7 @@ async getWeather() {
   const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${this.cityName},${this.countryCode}&appid=${this.apikey}`)
 
   const responseData = await response.json();
-  return responseData.list;
+  return responseData;
 
   }
 
